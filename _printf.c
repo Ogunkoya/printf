@@ -44,9 +44,7 @@ while (get_flag(*p, &flags))
 p++;
 }
 pfunc = get_print(*p);
-count += (pfunc)
-? pfunc(arguments, &flags)
-: _printf("%%%c", *p);
+count += (pfunc) ? pfunc(arguments, &flags) : _printf("%%%c", *p);
 }
 else
 {
